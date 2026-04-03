@@ -25,16 +25,7 @@ from collections import defaultdict
 
 
 def group_anagrams(strs: List[str]) -> List[List[str]]:
-    """
-    Group anagrams together.
     
-    THE INTUITION:
-    Anagrams have the same sorted characters. So we can use the sorted string
-    as a "signature" or key in a hash map.
-    
-    Time: O(n × k log k) where n = number of strings, k = max string length
-    Space: O(n × k)
-    """
     groups = defaultdict(list)
     
     for s in strs:
