@@ -24,20 +24,7 @@ from typing import List
 
 
 def product_except_self(nums: List[int]) -> List[int]:
-    """
-    Calculate product of all elements except self.
     
-    THE INTUITION:
-    For position i, the answer is: (product of all elements to the left) × 
-                                    (product of all elements to the right)
-    
-    We can compute this in two passes:
-    1. Left pass: compute prefix products
-    2. Right pass: compute suffix products and combine
-    
-    Time: O(n) - two passes
-    Space: O(1) - output array doesn't count as extra space
-    """
     n = len(nums)
     answer = [1] * n
     
