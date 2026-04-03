@@ -20,16 +20,7 @@ LEARNING FOCUS:
 
 
 def is_palindrome(s: str) -> bool:
-    """
-    Check if string is a palindrome (ignoring case and non-alphanumeric).
     
-    THE INTUITION:
-    Use two pointers - one from start, one from end - and move toward center.
-    Skip non-alphanumeric characters.
-    
-    Time: O(n)
-    Space: O(1)
-    """
     left, right = 0, len(s) - 1
     
     while left < right:
