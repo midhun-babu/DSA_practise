@@ -22,20 +22,7 @@ from typing import List
 
 
 def three_sum(nums: List[int]) -> List[List[int]]:
-    """
-    Find all unique triplets that sum to zero.
     
-    THE INTUITION:
-    1. Sort the array first
-    2. For each number, use two pointers to find pairs that sum to its negative
-    
-    Why sorting helps:
-    - Skip duplicates easily
-    - Two pointers can find pairs in O(n) instead of O(n²)
-    
-    Time: O(n²) - sorting + nested loops
-    Space: O(1) or O(n) depending on sort
-    """
     result = []
     nums.sort()
     n = len(nums)
