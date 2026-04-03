@@ -22,17 +22,7 @@ from collections import Counter, defaultdict
 
 
 def min_window(s: str, t: str) -> str:
-    """
-    Find minimum window substring containing all characters of t.
     
-    THE INTUITION:
-    1. Expand window by moving 'right' until we have all characters
-    2. Contract window by moving 'left' to find minimum
-    3. Repeat until 'right' reaches end
-    
-    Time: O(m + n) where m = len(s), n = len(t)
-    Space: O(n)
-    """
     if not s or not t or len(s) < len(t):
         return ""
     
