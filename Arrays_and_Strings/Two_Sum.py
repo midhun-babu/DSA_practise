@@ -21,16 +21,7 @@ from typing import List
 
 
 def two_sum(nums: List[int], target: int) -> List[int]:
-    """
-    Find two numbers that add up to target.
     
-    THE INTUITION:
-    As we walk through the array, we ask: "Have I seen the number that would 
-    complete this pair before?" We use a hash map to remember what we've seen.
-    
-    Time: O(n) - single pass
-    Space: O(n) - hash map storage
-    """
     # This dictionary stores: {number_we_saw: its_index}
     # Think of it as our "memory" of numbers we've passed by
     seen = {}
