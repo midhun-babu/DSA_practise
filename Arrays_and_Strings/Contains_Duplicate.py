@@ -20,16 +20,7 @@ from typing import List
 
 
 def contains_duplicate(nums: List[int]) -> bool:
-    """
-    Check if array contains any duplicate.
     
-    THE INTUITION:
-    Use a set to track numbers we've seen. If we see a number again, 
-    we found a duplicate!
-    
-    Time: O(n)
-    Space: O(n)
-    """
     seen = set()
     
     for num in nums:
@@ -41,12 +32,7 @@ def contains_duplicate(nums: List[int]) -> bool:
 
 
 def contains_duplicate_sort(nums: List[int]) -> bool:
-    """
-    Alternative: Sort first, then check adjacent elements.
-    
-    Time: O(n log n) - sorting
-    Space: O(1) - if in-place sort allowed
-    """
+ 
     nums.sort()  # Sorts in-place
     
     for i in range(1, len(nums)):
