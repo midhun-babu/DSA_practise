@@ -22,18 +22,7 @@ from typing import List
 
 
 def max_profit(prices: List[int]) -> int:
-    """
-    Find maximum profit from buying and selling stock once.
     
-    THE INTUITION:
-    We want to buy low and sell high. As we go through each day:
-    1. Track the minimum price we've seen so far (best day to buy)
-    2. Calculate profit if we sell today
-    3. Update max profit if this is better
-    
-    Time: O(n) - single pass
-    Space: O(1) - just two variables
-    """
     if len(prices) < 2:
         return 0
     
