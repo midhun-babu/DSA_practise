@@ -21,19 +21,7 @@ from typing import List
 
 
 def max_subarray(nums: List[int]) -> int:
-    """
-    Find maximum sum of any contiguous subarray.
     
-    THE INTUITION (Kadane's Algorithm):
-    At each position, we have two choices:
-    1. Extend the previous subarray (add current element)
-    2. Start a new subarray from current element
-    
-    We pick whichever gives us a larger sum.
-    
-    Time: O(n)
-    Space: O(1)
-    """
     # Current maximum sum ending at current position
     current_sum = nums[0]
     
