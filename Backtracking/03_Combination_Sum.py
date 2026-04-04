@@ -24,16 +24,7 @@ from typing import List
 
 
 def combination_sum(candidates: List[int], target: int) -> List[List[int]]:
-    """
-    Find all combinations that sum to target.
     
-    THE INTUITION:
-    For each position, try all candidates that don't exceed remaining target.
-    Can reuse same candidate multiple times.
-    
-    Time: O(n^(target/min_candidate))
-    Space: O(target/min_candidate)
-    """
     result = []
     candidates.sort()  # Sort to help pruning
     
