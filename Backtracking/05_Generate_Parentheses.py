@@ -20,16 +20,7 @@ from typing import List
 
 
 def generate_parenthesis(n: int) -> List[str]:
-    """
-    Generate all valid parentheses combinations.
     
-    THE INTUITION:
-    We can add '(' if we haven't used all n opening parentheses.
-    We can add ')' if we have more '(' than ')' so far.
-    
-    Time: O(4^n / sqrt(n)) - Catalan number
-    Space: O(n)
-    """
     result = []
     
     def backtrack(current: str, open_count: int, close_count: int):
