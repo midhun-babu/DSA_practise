@@ -21,17 +21,7 @@ from typing import List
 
 
 def subsets(nums: List[int]) -> List[List[int]]:
-    """
-    Generate all subsets using backtracking.
     
-    THE INTUITION:
-    For each element, we have two choices:
-    1. Include it in the current subset
-    2. Exclude it from the current subset
-    
-    Time: O(n × 2^n) - 2^n subsets, each takes O(n) to copy
-    Space: O(n) - recursion stack
-    """
     result = []
     
     def backtrack(start: int, current: List[int]):
