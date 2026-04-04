@@ -24,16 +24,7 @@ from typing import List
 
 
 def combination_sum2(candidates: List[int], target: int) -> List[List[int]]:
-    """
-    Find combinations with each number used at most once.
     
-    THE INTUITION:
-    Sort first to group duplicates together.
-    Skip duplicates at the same level to avoid duplicate combinations.
-    
-    Time: O(2^n)
-    Space: O(n)
-    """
     result = []
     candidates.sort()
     
