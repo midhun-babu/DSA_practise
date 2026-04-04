@@ -20,16 +20,7 @@ from typing import List
 
 
 def partition(s: str) -> List[List[str]]:
-    """
-    Partition string into palindromes.
     
-    THE INTUITION:
-    For each position, try all possible ending positions.
-    If substring is palindrome, recurse on remaining string.
-    
-    Time: O(n × 2^n)
-    Space: O(n)
-    """
     result = []
     
     def is_palindrome(sub: str) -> bool:
