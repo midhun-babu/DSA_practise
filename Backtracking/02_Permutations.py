@@ -21,16 +21,7 @@ from typing import List
 
 
 def permute(nums: List[int]) -> List[List[int]]:
-    """
-    Generate all permutations using backtracking.
     
-    THE INTUITION:
-    For each position, try all unused elements.
-    Track which elements have been used.
-    
-    Time: O(n × n!)
-    Space: O(n)
-    """
     result = []
     n = len(nums)
     used = [False] * n
