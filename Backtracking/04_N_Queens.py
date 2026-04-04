@@ -23,16 +23,7 @@ from typing import List
 
 
 def solve_n_queens(n: int) -> List[List[str]]:
-    """
-    Solve N-Queens problem.
     
-    THE INTUITION:
-    Place queens row by row.
-    For each row, try each column and check if it's safe.
-    
-    Time: O(n!)
-    Space: O(n)
-    """
     result = []
     board = [['.' for _ in range(n)] for _ in range(n)]
     
