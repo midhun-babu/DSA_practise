@@ -20,15 +20,7 @@ from typing import List
 
 
 def letter_combinations(digits: str) -> List[str]:
-    """
-    Generate all letter combinations for phone number.
     
-    THE INTUITION:
-    For each digit, try all possible letters it represents.
-    
-    Time: O(4^n) where n = len(digits), 4 is max letters per digit
-    Space: O(n)
-    """
     if not digits:
         return []
     
