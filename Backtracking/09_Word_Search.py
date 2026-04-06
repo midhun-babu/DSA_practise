@@ -23,16 +23,7 @@ from typing import List
 
 
 def exist(board: List[List[str]], word: str) -> bool:
-    """
-    Check if word exists in board.
-    
-    THE INTUITION:
-    For each cell, try to match word starting from there.
-    Mark visited cells and backtrack if path fails.
-    
-    Time: O(m × n × 4^L) where L = len(word)
-    Space: O(L) - recursion stack
-    """
+   
     if not board or not board[0]:
         return False
     
