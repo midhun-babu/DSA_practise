@@ -22,18 +22,7 @@ from typing import List
 
 
 def solve_sudoku(board: List[List[str]]) -> None:
-    """
-    Solve Sudoku puzzle in-place.
     
-    THE INTUITION:
-    Find empty cells and try digits 1-9.
-    Check if digit is valid in that position.
-    If valid, place it and recurse. If solution found, return True.
-    If no digit works, backtrack.
-    
-    Time: O(9^(n*n)) worst case
-    Space: O(n*n)
-    """
     def is_valid(row: int, col: int, num: str) -> bool:
         # Check row
         for c in range(9):
