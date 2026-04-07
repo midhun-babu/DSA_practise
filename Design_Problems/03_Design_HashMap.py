@@ -15,17 +15,7 @@ LEARNING FOCUS:
 
 
 class MyHashMap:
-    """
-    HashMap implementation with chaining.
-    
-    THE INTUITION:
-    1. Use hash function to map key to bucket index
-    2. Each bucket is a list (chain) to handle collisions
-    3. Search in bucket for the key
-    
-    Time: O(1) average, O(n) worst case
-    Space: O(n)
-    """
+   
     
     def __init__(self):
         self.size = 1000  # Number of buckets
