@@ -15,7 +15,7 @@ LEARNING FOCUS:
 
 
 class ListNode:
-    """Doubly linked list node."""
+    
     def __init__(self, key: int = 0, value: int = 0):
         self.key = key
         self.value = value
@@ -24,19 +24,7 @@ class ListNode:
 
 
 class LRUCache:
-    """
-    LRU Cache using Hash Map + Doubly Linked List.
     
-    THE INTUITION:
-    - Hash Map: O(1) lookup by key
-    - Doubly Linked List: O(1) removal and insertion at both ends
-    
-    Most recently used items are at front (after head).
-    Least recently used items are at back (before tail).
-    
-    Time: O(1) for both get and put
-    Space: O(capacity)
-    """
     
     def __init__(self, capacity: int):
         self.capacity = capacity
