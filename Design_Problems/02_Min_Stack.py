@@ -22,16 +22,7 @@ LEARNING FOCUS:
 
 
 class MinStack:
-    """
-    Stack with O(1) min operation.
     
-    THE INTUITION:
-    Store (value, current_min) for each element.
-    current_min is the minimum of all elements below and including this one.
-    
-    Time: O(1) for all operations
-    Space: O(n)
-    """
     
     def __init__(self):
         self.stack = []  # Each element: (value, current_min)
