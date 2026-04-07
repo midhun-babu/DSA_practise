@@ -17,16 +17,7 @@ LEARNING FOCUS:
 
 
 class MyCircularQueue:
-    """
-    Circular Queue using fixed-size array.
     
-    THE INTUITION:
-    Use array with head and tail pointers.
-    When pointers reach end, wrap around to beginning.
-    
-    Time: O(1) for all operations
-    Space: O(k) where k = capacity
-    """
     
     def __init__(self, k: int):
         self.capacity = k
