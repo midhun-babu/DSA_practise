@@ -20,19 +20,7 @@ from typing import List
 
 
 def can_complete_circuit(gas: List[int], cost: List[int]) -> int:
-    """
-    Find starting station to complete circuit.
     
-    THE INTUITION (Greedy):
-    If total_gas >= total_cost, a solution exists.
-    
-    Track current tank. If tank goes negative at station i,
-    we can't start from any station from start to i.
-    Try starting from i+1 instead.
-    
-    Time: O(n)
-    Space: O(1)
-    """
     total_gas = 0
     total_cost = 0
     tank = 0
