@@ -19,16 +19,7 @@ LEARNING FOCUS:
 
 
 def is_valid(s: str) -> bool:
-    """
-    Check if parentheses are valid.
     
-    THE INTUITION:
-    Use a stack. Push opening brackets, pop when matching closing bracket found.
-    If stack is empty when we see closing bracket, or wrong type, invalid.
-    
-    Time: O(n)
-    Space: O(n)
-    """
     stack = []
     matching = {')': '(', '}': '{', ']': '['}
     
