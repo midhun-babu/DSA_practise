@@ -23,16 +23,7 @@ from typing import List
 
 
 def can_jump(nums: List[int]) -> bool:
-    """
-    Check if last index is reachable.
     
-    THE INTUITION (Greedy):
-    Track the furthest index we can reach.
-    If at any point, current index > max_reach, we can't proceed.
-    
-    Time: O(n)
-    Space: O(1)
-    """
     max_reach = 0
     
     for i, jump in enumerate(nums):
