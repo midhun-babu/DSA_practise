@@ -22,14 +22,7 @@ LEARNING FOCUS:
 - BFS for shortest path
 - Word transformation graph
 - Bidirectional BFS optimization
-"""
 
-from typing import List
-from collections import deque, defaultdict
-
-
-def ladder_length(begin_word: str, end_word: str, word_list: List[str]) -> int:
-    """
     Find shortest transformation sequence length using BFS.
     
     THE INTUITION:
