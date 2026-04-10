@@ -31,19 +31,7 @@ class TreeNode:
 
 
 def max_path_sum(root: Optional[TreeNode]) -> int:
-    """
-    Find maximum path sum in binary tree.
     
-    THE INTUITION:
-    For each node, we consider two types of paths:
-    1. Path going THROUGH the node (can include both children) -> candidate for global max
-    2. Path STARTING from node going UP (at most one child) -> return to parent
-    
-    We use post-order DFS: compute for children first, then decide for current node.
-    
-    Time: O(n)
-    Space: O(h)
-    """
     max_sum = float('-inf')
     
     def max_gain(node: Optional[TreeNode]) -> int:
