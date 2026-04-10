@@ -28,20 +28,7 @@ class TreeNode:
 
 
 def lowest_common_ancestor(root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-    """
-    Find LCA in a BST.
     
-    THE INTUITION:
-    In a BST:
-    - All values in left subtree are smaller than root
-    - All values in right subtree are larger than root
-    
-    If p.val <= root.val <= q.val (or vice versa), root is the LCA!
-    If both are smaller, go left. If both are larger, go right.
-    
-    Time: O(h) where h = tree height
-    Space: O(1)
-    """
     current = root
     
     while current:
