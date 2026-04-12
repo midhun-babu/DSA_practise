@@ -22,16 +22,7 @@ from typing import List
 
 
 def erase_overlap_intervals(intervals: List[List[int]]) -> int:
-    """
-    Minimum intervals to remove to make non-overlapping.
     
-    THE INTUITION (Greedy):
-    Sort by end time. Always keep the interval that ends earliest!
-    This leaves more room for subsequent intervals.
-    
-    Time: O(n log n)
-    Space: O(1) or O(n) depending on sort
-    """
     if not intervals:
         return 0
     
