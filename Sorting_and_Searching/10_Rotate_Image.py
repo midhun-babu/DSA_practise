@@ -21,18 +21,7 @@ from typing import List
 
 
 def rotate(matrix: List[List[int]]) -> None:
-    """
-    Rotate matrix 90 degrees clockwise in-place.
     
-    THE INTUITION:
-    90° clockwise rotation = Transpose + Reverse each row
-    
-    Transpose: Convert rows to columns (swap across diagonal)
-    Reverse: Reverse each row
-    
-    Time: O(n²)
-    Space: O(1)
-    """
     n = len(matrix)
     
     # Transpose
