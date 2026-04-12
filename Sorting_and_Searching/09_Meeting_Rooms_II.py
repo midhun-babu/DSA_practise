@@ -22,17 +22,7 @@ import heapq
 
 
 def min_meeting_rooms(intervals: List[List[int]]) -> int:
-    """
-    Minimum meeting rooms required.
     
-    THE INTUITION:
-    1. Sort by start time
-    2. Use min-heap to track when meetings end
-    3. If a meeting starts after earliest ending, reuse that room
-    
-    Time: O(n log n)
-    Space: O(n)
-    """
     if not intervals:
         return 0
     
