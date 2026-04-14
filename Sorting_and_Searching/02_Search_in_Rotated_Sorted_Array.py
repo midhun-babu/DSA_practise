@@ -26,20 +26,7 @@ from typing import List
 
 
 def search_rotated(nums: List[int], target: int) -> int:
-    """
-    Search in rotated sorted array.
     
-    THE INTUITION:
-    Even with rotation, one half is always sorted!
-    
-    1. Find middle
-    2. Determine which half is sorted
-    3. Check if target is in the sorted half
-    4. Search in appropriate half
-    
-    Time: O(log n)
-    Space: O(1)
-    """
     left, right = 0, len(nums) - 1
     
     while left <= right:
