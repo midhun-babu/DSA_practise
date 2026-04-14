@@ -24,16 +24,7 @@ import random
 
 
 def find_kth_largest_heap(nums: List[int], k: int) -> int:
-    """
-    Using min-heap of size k.
     
-    THE INTUITION:
-    Maintain a min-heap of k largest elements seen so far.
-    The smallest in this heap is the kth largest overall.
-    
-    Time: O(n log k)
-    Space: O(k)
-    """
     min_heap = []
     
     for num in nums:
