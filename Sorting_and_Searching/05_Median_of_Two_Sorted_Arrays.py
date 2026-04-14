@@ -24,18 +24,7 @@ from typing import List
 
 def find_median_sorted_arrays(nums1: List[int], nums2: List[int]) -> float:
     """
-    Find median using binary search on partitions.
     
-    THE INTUITION:
-    We need to partition both arrays such that:
-    - Left side has equal (or one more) elements than right
-    - All elements in left <= all elements in right
-    
-    Binary search on the smaller array to find the correct partition.
-    
-    Time: O(log(min(m, n)))
-    Space: O(1)
-    """
     # Ensure nums1 is the smaller array
     if len(nums1) > len(nums2):
         nums1, nums2 = nums2, nums1
