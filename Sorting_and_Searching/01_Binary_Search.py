@@ -24,18 +24,7 @@ from typing import List
 
 
 def binary_search(nums: List[int], target: int) -> int:
-    """
-    Binary search for target in sorted array.
     
-    THE INTUITION:
-    Repeatedly divide the search space in half.
-    - If target == middle, found it!
-    - If target < middle, search left half
-    - If target > middle, search right half
-    
-    Time: O(log n)
-    Space: O(1)
-    """
     left, right = 0, len(nums) - 1
     
     while left <= right:
