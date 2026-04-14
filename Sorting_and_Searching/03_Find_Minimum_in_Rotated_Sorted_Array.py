@@ -22,18 +22,7 @@ from typing import List
 
 
 def find_min(nums: List[int]) -> int:
-    """
-    Find minimum in rotated sorted array.
     
-    THE INTUITION:
-    Compare middle with rightmost element:
-    - If nums[mid] > nums[right]: Minimum is in right half
-    - If nums[mid] < nums[right]: Minimum is in left half (including mid)
-    - If equal (with duplicates): can't tell, shrink right
-    
-    Time: O(log n) for unique elements, O(n) worst with duplicates
-    Space: O(1)
-    """
     left, right = 0, len(nums) - 1
     
     while left < right:
