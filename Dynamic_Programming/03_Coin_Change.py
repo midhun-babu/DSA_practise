@@ -27,18 +27,7 @@ from typing import List
 
 
 def coin_change(coins: List[int], amount: int) -> int:
-    """
-    Minimum coins needed to make amount.
-    
-    THE INTUITION:
-    dp[i] = minimum coins to make amount i
-    
-    For each amount, try all coins:
-    dp[i] = min(dp[i], dp[i - coin] + 1) for each coin
-    
-    Time: O(amount × len(coins))
-    Space: O(amount)
-    """
+
     # Initialize with amount + 1 (impossible value)
     dp = [amount + 1] * (amount + 1)
     dp[0] = 0  # 0 coins needed for amount 0
