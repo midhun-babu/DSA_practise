@@ -22,18 +22,7 @@ import bisect
 
 
 def length_of_lis_dp(nums: List[int]) -> int:
-    """
-    LIS using DP (O(n²) approach).
-    
-    THE INTUITION:
-    dp[i] = length of LIS ending at index i
-    
-    For each i, check all j < i:
-    if nums[j] < nums[i], dp[i] = max(dp[i], dp[j] + 1)
-    
-    Time: O(n²)
-    Space: O(n)
-    """
+
     if not nums:
         return 0
     
