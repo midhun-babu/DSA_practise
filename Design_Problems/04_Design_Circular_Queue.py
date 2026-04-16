@@ -22,12 +22,12 @@ class MyCircularQueue:
     def __init__(self, k: int):
         self.capacity = k
         self.queue = [0] * k
-        self.head = -1  # Points to front element
-        self.tail = -1  # Points to last element
+        self.head = -1  
+        self.tail = -1  
         self.size = 0
     
     def enQueue(self, value: int) -> bool:
-        """Insert element at rear."""
+        
         if self.isFull():
             return False
         
