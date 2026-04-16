@@ -21,19 +21,7 @@ LEARNING FOCUS:
 
 
 def climb_stairs(n: int) -> int:
-    """
-    Count ways to climb n stairs.
-    
-    THE INTUITION:
-    To reach step n, you could have come from:
-    - Step n-1 (took 1 step)
-    - Step n-2 (took 2 steps)
-    
-    So: ways[n] = ways[n-1] + ways[n-2] (Fibonacci!)
-    
-    Time: O(n)
-    Space: O(1) - optimized version
-    """
+   
     if n <= 2:
         return n
     
