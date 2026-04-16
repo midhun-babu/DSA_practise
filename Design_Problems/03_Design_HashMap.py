@@ -18,15 +18,15 @@ class MyHashMap:
    
     
     def __init__(self):
-        self.size = 1000  # Number of buckets
+        self.size = 1000 
         self.buckets = [[] for _ in range(self.size)]
     
     def _hash(self, key: int) -> int:
-        """Hash function."""
+        
         return key % self.size
     
     def put(self, key: int, value: int) -> None:
-        """Insert or update key-value pair."""
+   
         index = self._hash(key)
         bucket = self.buckets[index]
         
