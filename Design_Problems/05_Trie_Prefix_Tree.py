@@ -25,17 +25,7 @@ class TrieNode:
 
 
 class Trie:
-    """
-    Prefix Tree (Trie) implementation.
-    
-    THE INTUITION:
-    Each node represents a character.
-    Path from root to node spells a prefix.
-    is_end marks complete words.
-    
-    Time: O(m) for all operations where m = word length
-    Space: O(m) per word
-    """
+   
     
     def __init__(self):
         self.root = TrieNode()
