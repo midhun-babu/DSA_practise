@@ -28,19 +28,7 @@ from typing import List
 
 
 def rob(nums: List[int]) -> int:
-    """
-    Maximum money that can be robbed.
-    
-    THE INTUITION:
-    For each house i, we have two choices:
-    1. Rob it: get nums[i] + max from houses up to i-2
-    2. Skip it: keep max from houses up to i-1
-    
-    dp[i] = max(dp[i-1], nums[i] + dp[i-2])
-    
-    Time: O(n)
-    Space: O(1) - optimized
-    """
+  
     if not nums:
         return 0
     if len(nums) == 1:
