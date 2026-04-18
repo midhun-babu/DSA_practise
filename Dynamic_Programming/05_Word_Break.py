@@ -23,18 +23,7 @@ from typing import List
 
 
 def word_break(s: str, word_dict: List[str]) -> bool:
-    """
-    Check if string can be segmented into dictionary words.
     
-    THE INTUITION:
-    dp[i] = True if s[0:i] can be segmented
-    
-    For each position i, check all possible j:
-    If dp[j] is True and s[j:i] is in wordDict, then dp[i] is True
-    
-    Time: O(n² × m) where n = len(s), m = avg word length
-    Space: O(n)
-    """
     word_set = set(word_dict)
     n = len(s)
     
