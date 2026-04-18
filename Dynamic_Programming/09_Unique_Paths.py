@@ -21,21 +21,7 @@ LEARNING FOCUS:
 
 
 def unique_paths(m: int, n: int) -> int:
-    """
-    Count unique paths in m x n grid.
     
-    THE INTUITION:
-    dp[i][j] = number of ways to reach cell (i, j)
-    
-    To reach (i, j), robot must come from:
-    - Above: (i-1, j)
-    - Left: (i, j-1)
-    
-    So: dp[i][j] = dp[i-1][j] + dp[i][j-1]
-    
-    Time: O(m × n)
-    Space: O(n) - optimized to 1D
-    """
     # dp[j] = number of ways to reach current row's column j
     dp = [1] * n  # First row: all 1s (only one way - go right)
     
