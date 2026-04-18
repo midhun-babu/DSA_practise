@@ -38,17 +38,7 @@ def length_of_lis_dp(nums: List[int]) -> int:
 
 
 def length_of_lis_binary_search(nums: List[int]) -> int:
-    """
-    LIS using binary search (O(n log n) approach).
     
-    THE INTUITION (Patience Sorting):
-    Maintain a list where tails[i] = smallest tail of all increasing subsequences of length i+1.
-    
-    For each number, use binary search to find where it fits.
-    
-    Time: O(n log n)
-    Space: O(n)
-    """
     tails = []  # tails[i] = smallest tail of LIS with length i+1
     
     for num in nums:
