@@ -25,7 +25,7 @@ def climb_stairs(n: int) -> int:
     if n <= 2:
         return n
     
-    # Only need to track last two values
+    
     prev2 = 1  # ways to reach n-2
     prev1 = 2  # ways to reach n-1
     
@@ -38,12 +38,7 @@ def climb_stairs(n: int) -> int:
 
 
 def climb_stairs_dp_array(n: int) -> int:
-    """
-    Full DP array approach (easier to understand).
-    
-    Time: O(n)
-    Space: O(n)
-    """
+   
     if n <= 2:
         return n
     
