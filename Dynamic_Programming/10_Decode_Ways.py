@@ -23,20 +23,7 @@ LEARNING FOCUS:
 
 def num_decodings(s: str) -> int:
     """
-    Count number of ways to decode string.
     
-    THE INTUITION:
-    dp[i] = number of ways to decode s[0:i]
-    
-    For each position, we can:
-    1. Decode single digit (if s[i-1] != '0')
-    2. Decode two digits (if 10 <= int(s[i-2:i]) <= 26)
-    
-    dp[i] = dp[i-1] (if single valid) + dp[i-2] (if double valid)
-    
-    Time: O(n)
-    Space: O(1) - optimized
-    """
     if not s or s[0] == '0':
         return 0
     
