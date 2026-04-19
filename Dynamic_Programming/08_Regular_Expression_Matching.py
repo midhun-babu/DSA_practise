@@ -23,22 +23,7 @@ LEARNING FOCUS:
 
 
 def is_match(s: str, p: str) -> bool:
-    """
-    Regular expression matching.
     
-    THE INTUITION:
-    dp[i][j] = True if s[0:i] matches p[0:j]
-    
-    Cases:
-    1. p[j-1] is letter: dp[i][j] = dp[i-1][j-1] AND s[i-1] == p[j-1]
-    2. p[j-1] == '.': dp[i][j] = dp[i-1][j-1]
-    3. p[j-1] == '*': 
-       - Zero: dp[i][j] = dp[i][j-2]
-       - One or more: dp[i][j] = dp[i-1][j] AND match(s[i-1], p[j-2])
-    
-    Time: O(m × n)
-    Space: O(m × n)
-    """
     m, n = len(s), len(p)
     dp = [[False] * (n + 1) for _ in range(m + 1)]
     
