@@ -33,18 +33,7 @@ def unique_paths(m: int, n: int) -> int:
 
 
 def unique_paths_math(m: int, n: int) -> int:
-    """
-    Math solution using combinations.
     
-    THE INTUITION:
-    Robot needs to make (m-1) down moves and (n-1) right moves.
-    Total moves = (m-1) + (n-1) = m + n - 2
-    
-    Number of unique paths = C(m+n-2, m-1) = (m+n-2)! / ((m-1)! × (n-1)!)
-    
-    Time: O(min(m, n))
-    Space: O(1)
-    """
     import math
     return math.comb(m + n - 2, m - 1)
 
