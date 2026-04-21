@@ -35,19 +35,7 @@ class ListNode:
 
 
 def reverse_list_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
-    """
-    Reverse linked list iteratively.
     
-    THE INTUITION:
-    We iterate through the list, reversing the 'next' pointer of each node.
-    We need to keep track of:
-    - prev: the node that will be the new 'next'
-    - current: the node we're processing
-    - next_temp: to not lose the rest of the list
-    
-    Time: O(n)
-    Space: O(1)
-    """
     prev = None
     current = head
     
