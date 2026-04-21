@@ -37,17 +37,7 @@ class ListNode:
 
 
 def reorder_list(head: Optional[ListNode]) -> None:
-    """
-    Reorder list: L0 → Ln → L1 → Ln-1 → ...
     
-    THE INTUITION (3 steps):
-    1. Find middle of list (slow/fast pointers)
-    2. Reverse second half
-    3. Merge two halves alternately
-    
-    Time: O(n)
-    Space: O(1)
-    """
     if not head or not head.next:
         return
     
