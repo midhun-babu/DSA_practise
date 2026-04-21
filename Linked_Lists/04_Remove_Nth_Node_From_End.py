@@ -35,16 +35,7 @@ class ListNode:
 
 
 def remove_nth_from_end(head: Optional[ListNode], n: int) -> Optional[ListNode]:
-    """
-    Remove nth node from end of list.
     
-    THE INTUITION:
-    Use two pointers with n nodes between them.
-    When fast reaches end, slow is at the node to remove.
-    
-    Time: O(n) - single pass
-    Space: O(1)
-    """
     dummy = ListNode(0, head)  # Dummy handles edge cases
     fast = slow = dummy
     
