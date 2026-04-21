@@ -35,17 +35,7 @@ class ListNode:
 
 
 def merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-    """
-    Merge two sorted linked lists.
     
-    THE INTUITION:
-    Like merging two sorted arrays, but with pointers.
-    Compare heads, take the smaller one, advance that list's pointer.
-    
-    Time: O(n + m)
-    Space: O(1) - reusing existing nodes
-    """
-    # Dummy node simplifies edge cases
     dummy = ListNode(0)
     current = dummy
     
