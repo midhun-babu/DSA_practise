@@ -27,20 +27,7 @@ class ListNode:
 
 
 def has_cycle(head: Optional[ListNode]) -> bool:
-    """
-    Detect cycle using Floyd's Tortoise and Hare algorithm.
     
-    THE INTUITION:
-    Imagine two runners on a circular track:
-    - Slow runner (tortoise) moves 1 step at a time
-    - Fast runner (hare) moves 2 steps at a time
-    
-    If there's a cycle, the fast runner will eventually catch up to the slow one.
-    If no cycle, the fast runner reaches the end.
-    
-    Time: O(n)
-    Space: O(1)
-    """
     if not head or not head.next:
         return False
     
