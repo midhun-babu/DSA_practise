@@ -11,10 +11,7 @@ Example:
 Input: head = [1,2,3,4,5], n = 2
 Output: [1,2,3,5]
 
-LEARNING FOCUS:
-- Fast and Slow pointers
-- One-pass algorithm
-- Edge case handling
+
 """
 
 from typing import Optional
