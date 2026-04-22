@@ -44,12 +44,7 @@ def has_cycle(head: Optional[ListNode]) -> bool:
 
 
 def has_cycle_hash_set(head: Optional[ListNode]) -> bool:
-    """
-    Alternative: Use hash set to track visited nodes.
     
-    Time: O(n)
-    Space: O(n)
-    """
     visited = set()
     current = head
     
