@@ -1,4 +1,4 @@
-"""
+i"""
 LeetCode #206: Reverse Linked List
 Category: Linked Lists
 Difficulty: Easy
@@ -54,15 +54,7 @@ def reverse_list_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 def reverse_list_recursive(head: Optional[ListNode]) -> Optional[ListNode]:
-    """
-    Reverse linked list recursively.
     
-    THE INTUITION:
-    Reverse the rest of the list, then attach head to the end.
-    
-    Time: O(n)
-    Space: O(n) - recursion stack
-    """
     # Base case: empty or single node
     if not head or not head.next:
         return head
