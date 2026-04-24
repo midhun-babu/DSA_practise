@@ -18,16 +18,7 @@ LEARNING FOCUS:
 
 
 def is_match(s: str, p: str) -> bool:
-    """
-    Wildcard matching with two pointers.
     
-    THE INTUITION:
-    Use two pointers. When '*' encountered, remember position.
-    If matching fails later, backtrack and try matching one more char with '*'.
-    
-    Time: O(n × m) worst case, often O(n + m)
-    Space: O(1)
-    """
     s_len, p_len = len(s), len(p)
     s_idx = p_idx = 0
     star_idx = -1
