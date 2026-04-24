@@ -21,18 +21,7 @@ from typing import List
 
 
 def trap_two_pointers(height: List[int]) -> int:
-    """
-    Calculate trapped rain water.
     
-    THE INTUITION:
-    Water trapped at i = min(max_left, max_right) - height[i]
-    
-    Use two pointers from both ends.
-    Process the side with smaller max (that's the limiting factor).
-    
-    Time: O(n)
-    Space: O(1)
-    """
     if not height:
         return 0
     
