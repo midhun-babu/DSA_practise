@@ -24,16 +24,7 @@ from collections import deque
 
 
 def max_sliding_window(nums: List[int], k: int) -> List[int]:
-    """
-    Find max in each sliding window.
     
-    THE INTUITION (Monotonic Deque):
-    Use deque to store indices of elements in decreasing order.
-    Front of deque always has max of current window.
-    
-    Time: O(n)
-    Space: O(k)
-    """
     if not nums or k == 0:
         return []
     
