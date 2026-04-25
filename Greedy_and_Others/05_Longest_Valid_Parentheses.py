@@ -20,18 +20,7 @@ LEARNING FOCUS:
 
 
 def longest_valid_parentheses_stack(s: str) -> int:
-    """
-    Find longest valid parentheses using stack.
     
-    THE INTUITION:
-    Use stack to store indices. Push '(' indices.
-    When ')' found, pop and calculate length.
-    
-    Push -1 initially as base index.
-    
-    Time: O(n)
-    Space: O(n)
-    """
     stack = [-1]  # Base index
     max_len = 0
     
