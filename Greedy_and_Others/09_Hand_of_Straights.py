@@ -20,17 +20,7 @@ from collections import Counter
 
 
 def is_straight_hand(hand: List[int], group_size: int) -> bool:
-    """
-    Check if hand can be divided into groups of consecutive cards.
     
-    THE INTUITION:
-    1. Count all cards
-    2. Sort and try to form groups starting from smallest
-    3. Greedy: always start group from smallest available card
-    
-    Time: O(n log n)
-    Space: O(n)
-    """
     if len(hand) % group_size != 0:
         return False
     
