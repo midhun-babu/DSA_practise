@@ -38,15 +38,7 @@ class ListNode:
 
 
 def merge_k_lists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
-    """
-    Merge k sorted lists using min-heap.
     
-    THE INTUITION:
-    Use min-heap to always get the smallest element among all lists.
-    
-    Time: O(N log k) where N = total nodes, k = number of lists
-    Space: O(k)
-    """
     lists = [lst for lst in lists if lst]
     
     if not lists:
