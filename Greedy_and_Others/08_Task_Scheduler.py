@@ -1,4 +1,4 @@
-"""
+y"""
 LeetCode #621: Task Scheduler
 Category: Greedy & Others
 Difficulty: Medium
@@ -25,17 +25,7 @@ from collections import Counter
 
 
 def least_interval(tasks: List[str], n: int) -> int:
-    """
-    Minimum time to complete all tasks with cooldown.
     
-    THE INTUITION:
-    1. Count task frequencies
-    2. The most frequent task determines the structure
-    3. Formula: (max_count - 1) * (n + 1) + num_max_tasks
-    
-    Time: O(n)
-    Space: O(1) - at most 26 letters
-    """
     if n == 0:
         return len(tasks)
     
