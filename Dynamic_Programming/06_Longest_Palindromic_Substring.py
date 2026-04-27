@@ -19,19 +19,7 @@ LEARNING FOCUS:
 
 
 def longest_palindrome_expand(s: str) -> str:
-    """
-    Find longest palindrome using expand around center.
     
-    THE INTUITION:
-    A palindrome mirrors around its center. There are two types:
-    - Odd length: center is a character (e.g., "aba")
-    - Even length: center is between characters (e.g., "abba")
-    
-    For each position, expand outward while it's a palindrome.
-    
-    Time: O(n²)
-    Space: O(1)
-    """
     if not s:
         return ""
     
