@@ -23,24 +23,7 @@ LEARNING FOCUS:
 
 
 def min_distance(word1: str, word2: str) -> int:
-    """
-    Minimum edit distance between two words.
     
-    THE INTUITION:
-    dp[i][j] = min operations to convert word1[0:i] to word2[0:j]
-    
-    If word1[i-1] == word2[j-1]:
-        dp[i][j] = dp[i-1][j-1]  # No operation needed
-    Else:
-        dp[i][j] = 1 + min(
-            dp[i-1][j],     # Delete from word1
-            dp[i][j-1],     # Insert into word1
-            dp[i-1][j-1]    # Replace
-        )
-    
-    Time: O(m × n)
-    Space: O(m × n) - can be optimized to O(min(m, n))
-    """
     m, n = len(word1), len(word2)
     
     # dp[i][j] = min operations to convert word1[0:i] to word2[0:j]
