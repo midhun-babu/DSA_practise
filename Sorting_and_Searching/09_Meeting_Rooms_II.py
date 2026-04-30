@@ -44,16 +44,7 @@ def min_meeting_rooms(intervals: List[List[int]]) -> int:
 
 
 def min_meeting_rooms_sweep(intervals: List[List[int]]) -> int:
-    """
-    Sweep line approach.
     
-    THE INTUITION:
-    Separate starts and ends, sort them.
-    Sweep through time, tracking concurrent meetings.
-    
-    Time: O(n log n)
-    Space: O(n)
-    """
     if not intervals:
         return 0
     
