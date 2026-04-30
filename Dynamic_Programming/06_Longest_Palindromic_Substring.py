@@ -48,14 +48,7 @@ def longest_palindrome_expand(s: str) -> str:
 
 
 def longest_palindrome_dp(s: str) -> str:
-    """
-    DP approach.
     
-    dp[i][j] = True if s[i:j+1] is palindrome
-    
-    Time: O(n²)
-    Space: O(n²)
-    """
     n = len(s)
     if n < 2:
         return s
