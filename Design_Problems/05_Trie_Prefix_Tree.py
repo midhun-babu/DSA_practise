@@ -18,7 +18,7 @@ LEARNING FOCUS:
 
 
 class TrieNode:
-    """Node in Trie."""
+    
     def __init__(self):
         self.children = {}  # char -> TrieNode
         self.is_end = False  # Marks end of a word
